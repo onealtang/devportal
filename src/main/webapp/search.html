@@ -2,12 +2,33 @@
   <div class="content">
       <div class="searchbox">
           <input name="q" type="text" />
-          <input type="button" name="search" />
+          <input type="button" name="search" value="search" />
+      </div>
+      <div class="advanced-search">
+          <input name="q" type="text" />
+          <input name="start" type="text" />
       </div>
       <div class="search-results">
-          <div class="search-item">
-              <div>revision 3</div>
+          <div class="pagination">
+              <a class="page-num" href="#"><span>1</span></a>
           </div>
+          <div class="search-item">
+              <div class="summary">
+                  <span class="revision">r123</span>
+                  <span class="separator" />
+                  <span class="change-date">2012-01-01 15:20:18</span>
+                  <span class="separator" />
+                  <span class="comments">this is testing summary</span>
+              </div>
+              <div class="file-paths">
+                  <div class="file-path">
+                      <span class="change-type">M</span>
+                      <span class="separator" />
+                      <span class="path">/src/com/test/xxx.scala</span>
+                  </div>
+              </div>
+          </div>
+          <div class="pagination"></div>
       </div>
   </div>
 </div>
